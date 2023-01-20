@@ -20,18 +20,26 @@
     />
 
     <!-- bootstrap CSS -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
-    />
+    /> -->
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/597881bd82.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-    <head>
+    <header class="min-vh-100 d-flex flex-column">
       <!-- Navbar -->
       <div class="container">
         <nav class="navbar navbar-expand-lg">
@@ -69,34 +77,18 @@
       </div>
 
       <!-- Carousel -->
-      <div class="container-fluid p-0 position-relative">
+      <div
+        class="container-fluid p-0 position-relative d-flex flex-column flex-grow-1"
+      >
         <div
           id="carouselExampleAutoplaying"
-          class="carousel slide"
+          class="carousel slide d-flex flex-column flex-grow-1"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="images/banner.png"
-                class="d-block w-100"
-                alt="images/banner.png"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/banner.png"
-                class="d-block w-100"
-                alt="images/banner.png"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/banner.png"
-                class="d-block w-100"
-                alt="images/banner.png"
-              />
-            </div>
+          <div class="carousel-inner flex-grow-1 bg-dark">
+            <div class="carousel-item h-100 active carousel-item_1"></div>
+            <div class="carousel-item h-100 carousel-item_1"></div>
+            <div class="carousel-item h-100 carousel-item_1"></div>
           </div>
           <button
             class="carousel-control-prev"
@@ -119,7 +111,7 @@
         </div>
 
         <div
-          class="container-fluid position-absolute top-50 start-0 text-white w-50 text-center d-flex flex-column align-items-center justify-content-center w-100 gap-2"
+          class="container-fluid position-absolute top-50 start-0 translate-middle-y text-white w-50 text-center d-flex flex-column align-items-center justify-content-center w-100 gap-2"
         >
           <h1 class="fw-bold w-75">The perfect venue for your next event</h1>
           <p class="w-50">
@@ -131,8 +123,135 @@
           </button>
         </div>
       </div>
-    </head>
-    <main></main>
+    </header>
+
+    <!-- main -->
+    <main class="my-5 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="images/wedding.png" alt="wedding png" class="img-fluid" />
+          </div>
+          <div
+            class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-center gap-3"
+          >
+            <h2 class="fw-bold">Every moment is Precious</h2>
+            <p class="text-black-50 fw-bold">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="btn btn-primary py-2 px-4">
+              Explore our album &nbsp; &nbsp;<span class="">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- our package -->
+      <div class="container py-5 my-5">
+        <h2 class="fw-bold py-5 text-center">Our Package</h2>
+
+        <div class="container-fluid row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <h1 class="display-3">$300</h1>
+            <h2>Business fair</h2>
+            <p>For most businesses event like book fair, craft fair.</p>
+
+            <ul class="list-unstyled">
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> limited space
+                access
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Security facility
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> event support
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Decoration design
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Per day bill
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <h1 class="display-3">$300</h1>
+            <h2>Business fair</h2>
+            <p>For most businesses event like book fair, craft fair.</p>
+
+            <ul class="list-unstyled">
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> limited space
+                access
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Security facility
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> event support
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Decoration design
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Per day bill
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <h1 class="display-3">$300</h1>
+            <h2>Business fair</h2>
+            <p>For most businesses event like book fair, craft fair.</p>
+
+            <ul class="list-unstyled">
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> limited space
+                access
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Security facility
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> event support
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Decoration design
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Per day bill
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <h1 class="display-3">$300</h1>
+            <h2>Business fair</h2>
+            <p>For most businesses event like book fair, craft fair.</p>
+
+            <ul class="list-unstyled">
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> limited space
+                access
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Security facility
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> event support
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Decoration design
+              </li>
+              <li>
+                <img src="icons/check.svg" alt="check.svg" /> Per day bill
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <!-- bootstrap JS -->
     <script

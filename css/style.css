@@ -3,3 +3,12 @@ html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+.carousel-item_1 {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 90vh;
+}
